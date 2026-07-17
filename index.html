@@ -3,63 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
+
+    <title>Zhu Hanqi | Personal Homepage</title>
+
     <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f5f5f5;
-            text-align:center;
-            margin-top:80px;
+        * {
+            box-sizing: border-box;
         }
-        .card{
-            background:white;
-            width:600px;
-            margin:auto;
-            padding:40px;
-            border-radius:15px;
-            box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef4ff, #f8fbff);
+            color: #1f2937;
+            line-height: 1.7;
         }
-        h1{
-            color:#333;
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 24px;
         }
-        p{
-            color:#666;
-            font-size:18px;
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 48px;
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
         }
-        a{
-            color:#0066cc;
-            text-decoration:none;
+
+        h1 {
+            margin-bottom: 8px;
+            font-size: 42px;
+            color: #1d4ed8;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 34px;
+            color: #1e3a8a;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 8px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 15px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+            }
+
+            .card {
+                padding: 28px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
+
 <body>
+    <div class="container">
+        <div class="card">
 
-<div class="card">
-    <h1>Hello!</h1>
+            <h1>Zhu Hanqi</h1>
 
-    <h2>I'm Zhu Hanqi</h2>
+            <p class="subtitle">
+                Undergraduate Student at Tsinghua University
+            </p>
 
-    <p>
-        Student at Tsinghua University,
-        Department of Automation.
-    </p>
+            <h2>About Me</h2>
 
-    <p>
-        Interests:
-        Machine Learning,
-        Computer Vision,
-        Robotics,
-        Large Language Models.
-    </p>
+            <p>
+                Hello! I am an undergraduate student in the Department of
+                Automation at Tsinghua University. I am interested in
+                artificial intelligence and intelligent systems, and I enjoy
+                learning through programming, projects, and hands-on practice.
+            </p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/asifnaseer8644-ui">
-            asifnaseer8644-ui
-        </a>
-    </p>
+            <h2>Research Interests</h2>
 
-</div>
+            <div class="tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Large Language Models</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Control Theory</span>
+                <span class="tag">Multimodal AI</span>
+            </div>
 
+            <h2>Skills</h2>
+
+            <p>
+                C, C++, Python, Git, LaTeX, Visual Studio and VS Code
+            </p>
+
+            <h2>Projects</h2>
+
+            <p>
+                I have worked on projects involving image classification,
+                transfer learning, multimodal models, and AI-assisted note
+                organization.
+            </p>
+
+            <h2>Links</h2>
+
+            <p>
+                <a href="https://github.com/asifnaseer8644-ui"
+                   target="_blank">
+                    My GitHub Profile
+                </a>
+            </p>
+
+            <div class="footer">
+                © 2026 Zhu Hanqi · Built with GitHub Pages
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
